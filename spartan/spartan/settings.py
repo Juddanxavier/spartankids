@@ -130,7 +130,6 @@ SITE_ID = 1
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/var/www/static/',
 ]
 STATIC_URL = '/static/'
 
