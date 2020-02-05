@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static  %}
+
+<section class="pb-4"><div class="banner-img pt-5 mt-5">
+
+</div>
+<div class="container mt-5 pt-5">
+<h3><a href="/news/{{data.slug}}">{{ data.title }}</a></h3>
+<span class="pb-5 text-muted"> on {{ data.timestamp }}</span>
+
+<div class = "container py-5">
+	{{ data.description|safe|linebreaks}}
+</div>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static  %}
+<div class="banner-img pt-5 mt-5">
+<h1 class="align-self-center blues">News & Events</h1>
+
+</div>
+<div class="px-5 mt-5 pt-5">
+    <div class="container">
+        <div class="px-5">
+            {% for news in news %}
+            
+            <div class="pt-5 news">
+            <div class="badge badge-primary text-white">{{ news.timestamp|date:"M d, Y" }}</div>
+                <h5 class="mt-2"><a href="/news/{{news.slug}}"> {{ news.title }}</a></h5>
+                <p class="mt-2">{{ news.description|truncatechars:300 }}</p>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container py-5"> 
+ <div class="pagination justify-content-center">
+    {% if news.has_previous %}
+        <a class="pagination-action" href="?page=1">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i> </a>
+        <a class="pagination-action" href="?page={{ news.previous_page_number }}">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </a>
+    {% endif %}
+    {% for num in news.paginator.page_range %}
+        {% if news.number == num %}
+            <span class="pagination-number pagination-current">{{ num }}</span>
+        {% elif num > news.number|add:'-3' and num < news.number|add:'3' %}
+            <a class="pagination-number" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+    {% endfor %}
+    {% if news.has_next %}
+        <a class="pagination-action" href="?page={{ news.next_page_number }}">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <a class="pagination-action" href="?page={{ news.paginator.num_pages }}">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>1
+    {% endif %}
+</div></div>
+{% endblock %}

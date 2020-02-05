@@ -1,0 +1,52 @@
+{% load static %}
+<div class="navigation-wrap bg-white start-header start-style">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-md navbar-light">
+
+					<a class="navbar-brand" href="{% url 'home' %}" target="_blank"><img
+							src="{% static 'spartan/img/spartanlogo.png' %}" alt="spartan"></a>
+						<span class="logo_text">Spartan kids<br/><span class="logo_text_subheading">pre school & daycare</span></span>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto py-4 py-md-0">
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link active" href="/">Home</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 ">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+									aria-haspopup="true" aria-expanded="false">Programs</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Day Care</a>
+									<a class="dropdown-item" href="#">Pre-school</a>
+									<a class="dropdown-item" href="#">After school</a>
+									<a class="dropdown-item" href="#">Summer Camp</a>
+								</div>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="{% url 'news' %}">News & Events</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+							</li>
+
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="{% url 'about' %}">About</a>
+							</li>
+							<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+								<a class="nav-link" href="#">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

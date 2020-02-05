@@ -1,0 +1,6 @@
+django
+django-allauth
+django-bootstrap4
+django-photologue
+django-sortedm2m
+Pillow

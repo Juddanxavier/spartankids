@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spartan kids preschool & daycare</title>
+    {% load bootstrap4 %}
+
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %} 
+    {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Laila&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'spartan/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+{% block navbar %}
+    {% include  'navbar.html' %}
+{% endblock navbar %}
+
+    {% block content %}
+    
+    {% endblock content %}
+
+{% block footer %}
+    {% include  'footer.html' %}
+{% endblock footer %}
+<script src="{% static 'spartan/js/script.js' %}"></script>
+</body>
+</html>

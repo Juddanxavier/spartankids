@@ -1,0 +1,312 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="home">
+
+  <!--<div class="row mt-5">
+<div class="col-lg-4 mt-5 py-5 pl-5">
+hello
+</div>
+<div class="col-lg-8 my-auto">
+<div class="row">  
+ <div class="home-content offset-lg-1 col-lg-10">
+ <h1 class="pb-3">{% lorem 1 b random %}</h1>
+ <p1 class="pb-3"></p1>
+ </div> 
+</div>
+</div>
+</div>-->
+  <div class="bd-example carousel-home">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row mt-5">
+            <div class="col-lg-6 mt-5 py-5 pl-5">
+              <div class="container">
+                <h1 class="carousel-heading">
+                  Learn. Share. Laugh. Grow.
+                </h1>
+                <p class="carousel-subheading">we strive to create an environment that helps childrens to learn and grow
+                  in the perfect launchpad to explore their creativity, learn more about the world around them and
+                  develop skills that they will use throughout their life.</p>
+                
+              </div>
+              <div class="p-3"><a href="" class="order-button mt-5">Read More</a>
+                </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+              <div class="row">
+                <div class="home-content mt-5 offset-lg-1 col-lg-10">
+                  <img src="{% static 'spartan/img/slider1.png' %}" class="float-left img-fluid slider-img"
+                    height="100%">
+                  <p1 class="pb-3"></p1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!--<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>-->
+    </div>
+  </div>
+
+</section>
+<div class="home_purple_strip">
+  
+  <img src="{% static 'spartan/img/home_purple_strip.png' %}" class="img-fluid mt-5">
+</div>
+
+<section class="home_section2 pb-5">
+  <div class="row justify-content-center pt-3">
+    <h1 class="text-white">Spartan Programs</h1>
+  </div>
+  <div class="row justify-content-center p-5">
+    <div class=" col-lg-3 p-3"><a href="#" class="card">
+        <div class="card__head">
+          <div class="card__image_daycare">
+          </div>
+          <div class="card__author">
+            <div class="author">
+              <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80"
+                alt="Author of Tobias Reich" class="author__image">
+              <div class="author__content">
+                <p class="author__header">Day Care</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h2 class="card__headline">Day Care</h2>
+          <p class="card__text"><div class="row">
+<div class="col-6">1-2
+Years  </br>
+AGE GROUP</p> </div>
+<div class="col-6">2-2.5 hours/day
+DURATION</p> </div></div>
+        </div>
+        <div class="card__foot">
+          <span class="card__link">Read more</span>
+        </div>
+        <div class="card__border"></div>
+      </a></div>
+    <div class="programsection col-lg-3 p-3"><a href="#" class="card">
+        <div class="card__head">
+          <div class="card__image_preschool"></div>
+          <div class="card__author">
+            <div class="author">
+              <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80"
+                alt="Author of Tobias Reich" class="author__image">
+              <div class="author__content">
+                <p class="author__header">Pre School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h2 class="card__headline">Pre School</h2>
+          <p class="card__text"><div class="row">
+<div class="col-6">1-2
+Years  </br>
+AGE GROUP</p> </div>
+<div class="col-6">2-2.5 hours/day
+DURATION</p> </div></div>
+        </div>
+        <div class="card__foot">
+          <span class="card__link">Read more</span>
+        </div>
+        <div class="card__border"></div>
+      </a></div>
+    <div class="programsection col-lg-3 p-3"><a href="#" class="card">
+        <div class="card__head">
+          <div class="card__image_afterschool"></div>
+          <div class="card__author">
+            <div class="author">
+              <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80"
+                alt="Author of Tobias Reich" class="author__image">
+              <div class="author__content">
+                <p class="author__header">After School</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h2 class="card__headline">After School</h2>
+          <p class="card__text"><div class="row">
+<div class="col-6">1-2
+Years  </br>
+AGE GROUP</p> </div>
+<div class="col-6">2-2.5 hours/day
+DURATION</p> </div></div>
+        </div>
+        <div class="card__foot">
+          <span class="card__link">Read more</span>
+        </div>
+        <div class="card__border"></div>
+      </a></div>
+    <div class="programsection col-lg-3 p-3"><a href="#" class="card">
+        <div class="card__head">
+          <div class="card__image_summercamp"></div>
+          <div class="card__author">
+            <div class="author">
+              <img src="https://s.gravatar.com/avatar/7ff9e93ff25e002bc49f4d69c0c3eac7?s=80"
+                alt="Author of Tobias Reich" class="author__image">
+              <div class="author__content">
+                <p class="author__header">Summer Camp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h2 class="card__headline">Summer Camp</h2>
+         <p class="card__text"><div class="row">
+<div class="col-6">1-12
+Years  </br>
+AGE GROUP</p> </div>
+<div class="col-6">2-2.5 hours/day
+DURATION</p> </div></div>
+        </div>
+        <div class="card__foot">
+          <span class="card__link">Read more</span>
+        </div>
+        <div class="card__border"></div>
+      </a></div>
+  </div>
+</section>
+<div class="home_purple_strip_bottom">
+  <img src="{% static 'spartan/img/home_purple_strip_bottom.png' %}" class="img-fluid">
+</div>
+<section>
+  <div class="row pt-5 justify-content-center">
+    <h1 class="blues">What Make Us Different</h1>
+  </div>
+  <div class="d-flex container justify-content-center">
+    <div class="col-lg-4 mt-5 float-left">
+      <div class="mt-5 row">
+        <div class="col-sm-6">
+          <h5>Happy Environment</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+
+        <div class="col-sm-4 float-right">
+          <img src="{% static 'spartan/img/happy.png' %}" class="img-fluid">
+        </div>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-sm-6 ">
+          <h5>Hygiene</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+
+        <div class="col-sm-4 float-right">
+          <img src="{% static 'spartan/img/hygiene.png' %}" class="img-fluid">
+        </div>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-sm-6 ">
+          <h5>Safety & Security</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+
+        <div class="col-sm-4 float-right">
+          <img src="{% static 'spartan/img/cctv.png' %}" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 spartankid_container">
+      <img src="{% static 'spartan/img/spartankid.png' %}" class="spartankid img-fluid">
+    </div>
+    <div class="col-lg-4 mt-5 float-right">
+      <div class="mt-5 row">
+        <div class="col-sm-4"><img src="{% static 'spartan/img/playarea.png' %}" class="img-fluid">
+        </div>
+        <div class="col-sm-6 float-left">
+          <h5>Play Area</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-sm-4"><img src="{% static 'spartan/img/happyenv.png' %}" class="img-fluid">
+        </div>
+        <div class="col-sm-6 float-left">
+          <h5> Playway Method</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+      </div>
+      <div class="mt-5 row">
+        <div class="col-sm-4"><img src="{% static 'spartan/img/computer.png' %}" class="img-fluid">
+        </div>
+        <div class="col-sm-6 float-left">
+          <h5>Audio & Visual Classroom</h5>
+          <p class="text-muted">Safe and playfull environment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pb-5 mt-5">
+  <div class="row pt-5 justify-content-center">
+    <h1 class="blues">Learning Styles</h1>
+  </div>
+  <div class="container-fluid pb-5 px-5">
+    <div class="row pt-5">
+      <div class="align-left col-lg-6">
+        <p>Every children have their own love language, we all have our unique learning style. This learning style
+          continue with us into into adulthood.there is no right or wrong way to learning styles. we should strive to
+          help children to find their own learning style. in spartan we reviewed different learning style that you will
+          hear within education system.</p>
+        <ul class="mt-3 pl-5">
+          <li>Visual Learning</li>
+          <li>Logical Learning</li>
+          <li>Social Learning</li>
+          <li>Physical Learning</li>
+          <li>Auditory Learning</li>
+          <li>inter-Personal Learning</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'spartan/img/learningstyle.png' %}" class="img-fluid" alt=""></div>
+    </div>
+  </div>
+
+</section>
+<section>
+<div class="admission_form">
+<div class="text-center py-5 ">
+<h2 class="blues py-5">Enrol your children, download admission form.</h2>
+<span class="border-btn"><a class="btn1 px-5 mx-5" href="">Download</a></span></div>
+</div>
+</section>
+<section class="py-5">
+ <div class="row pt-5 justify-content-center">
+    <h1 class="blues">News & Events</h1>
+  </div>
+<div class="row d-flex justify-content-center px-5">
+            {% for news in object_list %}
+            
+            <div class="col-lg-5 pt-5">
+            <div class="text-muted">{{ news.timestamp|date:"M d, Y" }}</div>
+                <h5 class="mt-2"><a href="/news/{{news.slug}}"> {{ news.title }}</a></h5>
+                <p class="mt-2">{{ news.description|truncatechars:150 }}</p>
+            </div>
+
+            {% endfor %}
+        </div>
+
+</section>
+{% endblock content %}

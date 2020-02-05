@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load imagekit %}
+{% load static %}
+{% block content %}
+<div class="banner-img pt-5 mt-5">
+
+</div>
+<section class="gallery-block grid-gallery">
+    <div class="container">
+        <div class="row">
+            {% for photo in photos %}
+
+            <div class="col-md-6 col-lg-4 text-center item">
+                <a class="lightbox" href="{{ photo.image.url }}">
+                    <img class="img-fluid image scale-on-hover" src="{{ photo.image_thumbnail.url }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<div class="container py-5"> 
+
+    <div class="pagination justify-content-center">
+    {% if photos.has_previous %}
+        <a class="pagination-action" href="?page=1">
+            <i class="fa fa-angle-double-left" aria-hidden="true"></i> </a>
+        <a class="pagination-action" href="?page={{ photos.previous_page_number }}">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </a>
+    {% endif %}
+    {% for num in photos.paginator.page_range %}
+        {% if photos.number == num %}
+            <span class="pagination-number pagination-current">{{ num }}</span>
+        {% elif num > photos.number|add:'-3' and num < photos.number|add:'3' %}
+            <a class="pagination-number" href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+    {% endfor %}
+    {% if photos.has_next %}
+        <a class="pagination-action" href="?page={{ photos.next_page_number }}">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </a>
+        <a class="pagination-action" href="?page={{ photos.paginator.num_pages }}">
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>1
+    {% endif %}
+</div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.grid-gallery', {
+        animation: 'slideIn'
+    });
+
+</script>
+{% endblock %}
