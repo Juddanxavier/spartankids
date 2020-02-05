@@ -139,3 +139,4 @@ MEDIA_ROOT = os.path.join(os.path.dirname(
     BASE_DIR), 'spartan/').replace('\\', '/')
 
 django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
