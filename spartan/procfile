@@ -1,1 +1,1 @@
-web: gunicorn spartan.wsgi
+web: gunicorn spartankids.wsgi
